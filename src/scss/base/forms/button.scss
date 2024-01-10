@@ -2,13 +2,14 @@
 // Сніппет (HTML): btn
 
 .button {
-	display: inline-flex;
-	padding: 0px 0px;
-	@media (any-hover: hover) {
-		&:hover {
-		}
-	}
-	&--fw {
-		width: 100%;
-	}
+  background: url("@img/bg-button.jpg") center no-repeat;
+  display: inline-flex;
+  padding: 0px 0px;
+  @media (any-hover: hover) {
+    &:hover {
+    }
+  }
+  &--fw {
+    width: 100%;
+  }
 }
