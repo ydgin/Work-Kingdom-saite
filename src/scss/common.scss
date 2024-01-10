@@ -9,10 +9,10 @@
     color: $goldColor;
     text-transform: capitalize;
     font-family: "Italiana";
-    font-style: 3rem;
+    font-size: toRem(48);
   }
   &__text {
-    line-height: 156.25%; /* 25/16 */
+    line-height: 25/16;
   }
   &__button {
   }
