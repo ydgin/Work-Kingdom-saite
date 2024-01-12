@@ -24,10 +24,17 @@
     height: 100%;
     top: 0;
     left: 0;
-    opacity: 0.5;
+    transition: opacity 0.3s;
     background: url("@img/bg-button.jpg") center no-repeat;
   }
   span {
     position: relative;
+  }
+  @media (any-hover: hover) {
+    &:hover {
+      & ::before {
+        opacity: 1;
+      }
+    }
   }
 }
