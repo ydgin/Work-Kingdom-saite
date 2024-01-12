@@ -1,6 +1,9 @@
 // Заголовки, загальні БЕМ блоки та інше...
 // Шапка блоку;
 .block-header {
+  display: grid;
+  gap: toRem(20);
+  justify-items: start;
   &__label {
     line-height: 156.25%; /* 25/16 */
     text-transform: capitalize;
@@ -12,8 +15,26 @@
     font-size: toRem(48);
   }
   &__text {
-    line-height: 25/16;
+    display: grid;
+    gap: toRem(20);
+    line-height: 156.25%; /* 25/16 */
+    blockquote {
+      font-style: italic;
+    }
   }
   &__button {
   }
 }
+// <div class="block-header">
+// <div class="block-header__label">About us</div>
+// <h2 class="block-header__title">Treating pet like Royalty</h2>
+// <div class="block-header__text text">
+//   <blockquote>“They’re not just pets, they’re family”</blockquote>
+//   <p>
+//     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+//     aliquam mi id augue ultrices, in tempus elit tristique. Aliquam
+//     ultrices sem non.
+//   </p>
+// </div>
+// <div class="block-header__ button button"><span>Explore</span></div>
+// </div>

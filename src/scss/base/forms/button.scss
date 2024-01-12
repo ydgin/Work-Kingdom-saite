@@ -25,6 +25,7 @@
     top: 0;
     left: 0;
     transition: opacity 0.3s;
+    opacity: 0.5;
     background: url("@img/bg-button.jpg") center no-repeat;
   }
   span {
@@ -32,7 +33,7 @@
   }
   @media (any-hover: hover) {
     &:hover {
-      & ::before {
+      &::before {
         opacity: 1;
       }
     }
