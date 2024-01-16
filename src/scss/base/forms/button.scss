@@ -14,8 +14,14 @@
     &:hover {
     }
   }
-  &--fw {
-    width: 100%;
+  &--border {
+    background-color: transparent;
+    border: 1px solid $bgColor;
+    &::before {
+      display: none;
+      color: $goldColor;
+      opacity: 0;
+    }
   }
   &::before {
     content: "";
@@ -35,6 +41,7 @@
     &:hover {
       &::before {
         opacity: 1;
+        color: $goldColor;
       }
     }
   }
