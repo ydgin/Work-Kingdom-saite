@@ -15,11 +15,12 @@
     }
   }
   &--border {
+    transition: all 0.3s;
     background-color: transparent;
-    border: 1px solid $bgColor;
+    border: toRem(1) solid $bgColor;
+    color: $goldColor;
+
     &::before {
-      display: none;
-      color: $goldColor;
       opacity: 0;
     }
   }
@@ -34,14 +35,18 @@
     opacity: 0.5;
     background: url("@img/bg-button.jpg") center no-repeat;
   }
+  &--fw {
+    width: 100%;
+  }
   span {
     position: relative;
   }
   @media (any-hover: hover) {
     &:hover {
+      color: $mainColor;
+      border: toRem(1) solid transparent;
       &::before {
         opacity: 1;
-        color: $goldColor;
       }
     }
   }

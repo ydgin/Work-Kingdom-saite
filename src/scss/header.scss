@@ -1,0 +1,36 @@
+.header {
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+  }
+  &__menu {
+  }
+  &__logo {
+  }
+  &__action {
+  }
+}
+
+.menu {
+  &__icon {
+  }
+  &__body {
+  }
+  &__list {
+  }
+  &__item {
+  }
+  &__link {
+  }
+}
+.icon__menu {
+}
+.acttion-header {
+  &__header {
+  }
+  &__link {
+  }
+  &__button {
+  }
+}
+// ---------------------------------------------------------------
