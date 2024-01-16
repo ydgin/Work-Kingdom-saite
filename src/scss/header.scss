@@ -11,6 +11,7 @@
   &__menu {
   }
   &__logo {
+    @include adaptiveValue("width", 217, 100);
   }
   &__action {
   }
@@ -43,10 +44,13 @@
 }
 .action__header {
   justify-self: end;
-  gap: toRem(20);
+  display: flex;
+  justify-content: flex-end;
+  column-gap: toRem(47);
+  row-gap: toRem(3);
+  align-items: center;
+  flex-wrap: wrap;
 
-  &__header {
-  }
   &__link {
     display: inline-block;
     color: $goldColor;
@@ -57,6 +61,9 @@
   }
 }
 // ---------------------------------------------------------------
+//
+
+//Burger Icon
 .icon-menu {
   display: none;
   @media (max-width: $mobile) {
