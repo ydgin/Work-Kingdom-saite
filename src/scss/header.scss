@@ -2,6 +2,7 @@
   &__container {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
+    gap: toRem(20);
     min-height: toREM(152);
     align-items: center;
     padding-top: toRem(10);
@@ -38,11 +39,19 @@
 }
 .icon__menu {
 }
+.header__action {
+}
 .action__header {
   justify-self: end;
+  gap: toRem(20);
+
   &__header {
   }
   &__link {
+    display: inline-block;
+    color: $goldColor;
+    font-weight: 300;
+    line-height: 152%; /* 156/25 */
   }
   &__button {
   }
