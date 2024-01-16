@@ -28,6 +28,7 @@
     column-gap: toRem(47);
     row-gap: toRem(3);
     align-items: center;
+    @include adaptiveValue("column-gap", 47, 20);
   }
   &__item {
   }
@@ -50,6 +51,7 @@
   row-gap: toRem(3);
   align-items: center;
   flex-wrap: wrap;
+  @include adaptiveValue("column-gap", 47, 20);
 
   &__link {
     display: inline-block;
