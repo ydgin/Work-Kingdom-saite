@@ -39,8 +39,6 @@
     line-height: 152%; /* 156/25 */
   }
 }
-.icon__menu {
-}
 .header__action {
 }
 .action__header {
@@ -65,7 +63,7 @@
 // ---------------------------------------------------------------
 //
 
-//Burger Icon
+// Burger Icon
 .icon-menu {
   display: none;
   @media (max-width: $mobile) {
