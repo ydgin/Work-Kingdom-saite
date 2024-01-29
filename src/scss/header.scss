@@ -12,7 +12,7 @@
   &__menu {
   }
   &__logo {
-    @include adaptiveValue("width", 217, 100);
+    @include adaptiveValue("width", 217, 80);
   }
   &__action {
   }
@@ -50,7 +50,7 @@
   row-gap: toRem(3);
   align-items: center;
   flex-wrap: wrap;
-  @include adaptiveValue("column-gap", 47, 20, 0, $containerWidth, 767.98);
+  @include adaptiveValue("column-gap", 47, 15, 0, $containerWidth, 767.98);
 
   &__link {
     display: inline-block;
@@ -59,12 +59,11 @@
     line-height: 152%; /* 156/25 */
   }
   &__button {
-    @media  (max-width:$tablet){
-padding:toRem(8) toRem(20) ;
-    }
-      
+    @media (max-width: $tablet) {
+      padding: toRem(8) toRem(20);
     }
   }
+}
 
 // ---------------------------------------------------------------
 //
