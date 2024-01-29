@@ -3,6 +3,8 @@
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     gap: toRem(20);
+    @include adaptiveValue("width-height", 152, 70);
+
     min-height: toREM(152);
     align-items: center;
     padding-top: toRem(10);
@@ -11,7 +13,7 @@
   &__menu {
   }
   &__logo {
-    @include adaptiveValue("width", 217, 100, $containerWidth, 767.98);
+    @include adaptiveValue("width", 217, 100);
   }
   &__action {
   }
@@ -28,7 +30,7 @@
     column-gap: toRem(47);
     row-gap: toRem(3);
     align-items: center;
-    @include adaptiveValue("column-gap", 47, 20, $containerWidth, 767.98);
+    @include adaptiveValue("column-gap", 47, 20,0,  $containerWidth, 767.98);
   }
   &__item {
   }
