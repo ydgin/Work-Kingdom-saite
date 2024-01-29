@@ -8,19 +8,22 @@
     align-items: center;
     padding-top: toRem(10);
     padding-bottom: toRem(10);
-    @media (max-width:$mobile) {
-      
+    @media (max-width: $mobile) {
+      grid-template-columns: auto 1fr auto auto;
+      gap: toRem(0);
     }
   }
+
   &__menu {
   }
   &__logo {
     @include adaptiveValue("width", 217, 80);
+    position: relative;
+    z-index: 5;
   }
   &__action {
   }
 }
-
 .menu {
   &__icon {
   }
@@ -35,34 +38,34 @@
       background-color: $goldColor;
       padding: toRem(100) toRem(15) toRem(30) toRem(15);
       z-index: 2;
-    }}
-    &__list {
-      display: flex;
-      flex-wrap: wrap;
-      column-gap: toRem(47);
-      row-gap: toRem(3);
-      align-items: center;
-      @include adaptiveValue("column-gap", 47, 20, 0, $containerWidth, 767.98);
-      @media (max-width:$mobile) {
-        flex-direction: column;
-        row-gap: toRem(20);;
-      }
-    }
-    &__item {
-    }
-    &__link {
-      display: inline-block;
-      color: $goldColor;
-      font-weight: 300;
-      line-height: 152%; /* 156/25 */
-      @media (max-width:$mobile) {
-        flex-direction: column;
-        color: #fff;
-        font-size:toRem(28);
-      }
-
     }
   }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: toRem(47);
+    row-gap: toRem(3);
+    align-items: center;
+    @include adaptiveValue("column-gap", 47, 20, 0, $containerWidth, 767.98);
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      row-gap: toRem(20);
+    }
+  }
+  &__item {
+  }
+  &__link {
+    display: inline-block;
+    color: $goldColor;
+    font-weight: 300;
+    line-height: 152%; /* 156/25 */
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      color: #fff;
+      font-size: toRem(28);
+    }
+  }
+}
 
 .header__action {
 }
