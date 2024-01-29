@@ -8,6 +8,9 @@
     align-items: center;
     padding-top: toRem(10);
     padding-bottom: toRem(10);
+    @media (max-width:$mobile) {
+      
+    }
   }
   &__menu {
   }
@@ -30,7 +33,7 @@
       left: 0;
       overflow: auto;
       background-color: $goldColor;
-      padding: toRem(80) toRem(15) toRem(30) toRem(15);
+      padding: toRem(100) toRem(15) toRem(30) toRem(15);
       z-index: 2;
     }}
     &__list {
@@ -40,6 +43,10 @@
       row-gap: toRem(3);
       align-items: center;
       @include adaptiveValue("column-gap", 47, 20, 0, $containerWidth, 767.98);
+      @media (max-width:$mobile) {
+        flex-direction: column;
+        row-gap: toRem(20);;
+      }
     }
     &__item {
     }
@@ -48,6 +55,12 @@
       color: $goldColor;
       font-weight: 300;
       line-height: 152%; /* 156/25 */
+      @media (max-width:$mobile) {
+        flex-direction: column;
+        color: #fff;
+        font-size:toRem(28);
+      }
+
     }
   }
 
