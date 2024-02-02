@@ -38,8 +38,17 @@
         left: 0;
         overflow: auto;
         background-color: $goldColor;
-         padding: toRem(100) toRem(15) toRem(30) toRem(15);
-        
+        padding: toRem(100) toRem(15) toRem(30) toRem(15);
+        &::before {
+          content: "";
+          position: fixed;
+          width: 100%;
+          @include adaptiveValue("height", 152, 70);
+          top: 0;
+          left: 0;
+          z-index: 2;
+          background-color: $goldColor;
+        }
       }
     }
     &__list {
