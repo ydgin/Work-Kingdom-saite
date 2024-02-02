@@ -19,10 +19,15 @@
   &__logo {
     @include adaptiveValue("width", 217, 80);
     position: relative;
+    transition: all 0.3s;
+    color: #fff;
     z-index: 5;
+    
     &__action {
     }
+    
   }
+  
   .menu {
     &__icon {
     }
@@ -35,9 +40,10 @@
         width: 100%;
         height: 100%;
         top: 0;
-        left: 0;
+        left: -100%;
         overflow: auto;
         background-color: $goldColor;
+        transition: left 0.3s;
         padding: toRem(100) toRem(15) toRem(30) toRem(15);
         &::before {
           content: "";
@@ -45,9 +51,16 @@
           width: 100%;
           @include adaptiveValue("height", 152, 70);
           top: 0;
-          left: 0;
+          left: -100%;
           z-index: 2;
           background-color: $goldColor;
+          transition: left 0.3s;
+        }
+        .menu-open & {
+          left: 0;
+          &::before {
+            left: 0;
+          }
         }
       }
     }
@@ -135,7 +148,10 @@
         position: absolute;
         width: 100%;
         height: toRem(2);
-        background-color: #fff;
+        background-color: $goldColor;
+        .menu-open & {
+          background-color: #fff;
+        }
       }
       &::before {
         top: 0;
